@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Union</title>
+
+  <!-- Elegant Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 100px 100px;
+      padding: 60px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #f2cfd3, #fd5555);
+      color: #ffffff;
+    }
+
+    /* Title as button */
+    .welcome-link {
+      font-size: 10rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      transition: color 0.4s ease, transform 0.3s ease;
+      animation: fadeIn 2s ease;
+    }
+
+    .welcome-link:hover {
+      color: #5a1515;
+      transform: translateX(8px);
+    }
+
+    .welcome-link span.arrow {
+      font-size: 2rem;
+      line-height: 1;
+      position: relative;
+      top: 25px;
+    }
+
+    /* Subtitle */
+    p {
+      font-size: 1.4rem;
+      margin: 0 0 0 5px;
+      margin-left: 780px; /* how far right is it */
+      max-width: 600px;
+      line-height: 1.7;
+      animation: fadeIn 3s ease;
+      color: #fdfdfd;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Title + Arrow -->
+  <a href="welcome.html" class="welcome-link">
+    sacred union <span class="arrow">➔</span>
+  </a>
+
+  <!-- Subtitle -->
+  <p>two become true</p>
+</body>
+</html>

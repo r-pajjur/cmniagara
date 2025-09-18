@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacred Union</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 60px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(135deg, #f2cfd3, #fd5555);
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 60px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .nav-button {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 20px 40px;
+      border: 2px solid #ffffff;
+      border-radius: 30px;
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+    }
+
+    .nav-button:hover {
+      background: #ffb1b1;
+      color: #2d2d2d;
+      transform: translateY(-4px);
+      border-color: #ffb1b1;
+    }
+
+    .nav-button:nth-child(1) { animation-delay: 0.3s; }
+    .nav-button:nth-child(2) { animation-delay: 0.6s; }
+    .nav-button:nth-child(3) { animation-delay: 0.9s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>we're glad you're here</h1>
+
+  <div class="button-container">
+    <a href="#" class="nav-button">Purpose</a>
+    <a href="#" class="nav-button">Dive In</a>
+    <a href="#" class="nav-button">Temporary</a>
+  </div>
+</body>
+</html>
